@@ -4,20 +4,25 @@
     <title>The Yellow Dragon DB</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 <IMG class="displayed" src="Yellow_Dragon_logo.jpg" alt="...">
 <h1>The Yellow Dragon DB</h1>
+<script>
+    var checkLoginPass = function () {
+        var login = document.getElementById("name").value;
+        var pass = document.getElementById("password").value;
+        if (login === "admin" && pass === "wehatelemons") {
+          window.location.href="otherpage.html";
+        }
+        return false
+    }
+</script>
 <form>
-  <label for="fname">login:</label><br>
-  <input type="text" id="fname" name="fname"><br><br>
-  <label for="lname">password:</label><br>
-  <input type="password" id="lname" name="lname"><br><br>
-  <input type="submit" value="sign in">
+  <label for="name">login:</label><br>
+  <input type="text" id="name" name="name"><br><br>
+  <label for="password">password:</label><br>
+  <input type="password" id="password" name="password"><br><br>
+  <input type="button" value="sign in" onclick="checkLoginPass()">
 </form>
-<!--
-  Dev note - REMOVE BEFORE PROD
-  The login is "admin" and the password is "wehatelemons" !
--->
 </body>
 </html>
