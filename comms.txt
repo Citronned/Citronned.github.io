@@ -1,0 +1,2 @@
+Texte d'exemple pour communiquer
+Exemple de retour à la ligne et d'accents.
