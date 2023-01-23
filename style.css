@@ -1,0 +1,12 @@
+H1, H2, P, form { text-align: center }
+
+IMG.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+  }
+  img {
+    width: 10%;
+    height: auto;
+  }
+background-color: black;
